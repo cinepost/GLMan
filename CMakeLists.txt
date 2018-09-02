@@ -1,0 +1,35 @@
+SET( CMAKE_INSTALL_PREFIX /opt/glman )
+
+PROJECT( GLMan )
+CMAKE_MINIMUM_REQUIRED( VERSION 3.5 )
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+IF(NOT CMAKE_BUILD_TYPE)
+  SET(CMAKE_BUILD_TYPE "DEBUG")
+  #SET(CMAKE_BUILD_TYPE "RELEASE")
+  #SET(CMAKE_BUILD_TYPE "RELWITHDEBINFO")
+  #SET(CMAKE_BUILD_TYPE "MINSIZEREL")
+ENDIF()
+
+set( CMAKE_CXX_STANDARD 11 )
+set( CMAKE_CXX_STANDARD_REQUIRED ON )
+
+if (MSVC)
+	ADD_DEFINITIONS(/W3)
+elseif (UNIX) #(CMAKE_COMPILER_IS_GNUCXX)
+	ADD_DEFINITIONS(-Wall -fPIC -pedantic)
+else ()
+	MESSAGE(FATAL_ERROR "CMakeLists.txt has not been tested/written for your compiler.")
+endif ()
+
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/include/glman )
+
+add_subdirectory( src/glman_lib )
+add_subdirectory( src/glman_cmd )
+add_subdirectory( src/glman_for_python )
