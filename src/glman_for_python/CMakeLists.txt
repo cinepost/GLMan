@@ -33,9 +33,9 @@ install(TARGETS glman_for_python DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/python2
 add_custom_command(
   TARGET glman_for_python
   POST_BUILD
-  COMMAND rsync
-  ARGS -r
-    "${CMAKE_CURRENT_SOURCE_DIR}/../../python/glman_for_python/prman.py"
+  COMMAND mkdir ARGS -p ${CMAKE_INSTALL_PREFIX}/lib/python2.7libs
+  COMMAND rsync ARGS -r
+    "${PROJECT_DIR}/dist/python/glman_for_python/prman.py"
     "${CMAKE_INSTALL_PREFIX}/lib/python2.7libs"
   COMMENT "Copying Bundle Stuff"
 )

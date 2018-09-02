@@ -20,10 +20,9 @@ class RiModule {
 		void ri_Display(std::string output, std::string display, std::string channels);
 		void ri_Format(unsigned int width, unsigned int height, float aspect);
 		void ri_Translate(double x, double y, double z);
-		//RiModule(OP_Node *node);
-		//boost::shared_ptr<RiModule> createNode(std::string type_name);
-		//boost::shared_ptr<RiModule> createNamedNode(std::string type_name, std::string name);
-		//boost::shared_ptr<RiModule> node(std::string path);
+		void ri_Projection(std::string name, PyObject* parms=NULL);
+		void ri_Geometry(std::string name, PyObject* parms=NULL);
+
 	private:
 		std::vector<RIB_Interface *> ri_ifaces; // ri interfaces stack
 		RIB_Interface *iface; // current ri interface set by ri.Begin(...)

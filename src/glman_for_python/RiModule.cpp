@@ -53,6 +53,14 @@ void RiModule::ri_Translate(double x, double y, double z){
 	iface->ri_Translate(x, y, z);
 }
 
+void RiModule::ri_Projection(std::string name, PyObject* parms){
+	//iface->ri_Translate(x, y, z);
+}
+
+void RiModule::ri_Geometry(std::string name, PyObject* parms){
+	//iface->ri_Translate(x, y, z);
+}
+
 //boost::shared_ptr<RiModule> RiModule::createNode(std::string type_name) {
 //	return boost::shared_ptr<RiModule>(new RiModule(_node->createNode(type_name)));
 //}
@@ -65,6 +73,12 @@ void RiModule::ri_Translate(double x, double y, double z){
 //	return boost::shared_ptr<RiModule>(new RiModule(_node->node(path)));
 //}
 
+// Thin wrappers for overloaded functions default arguments
+void ri_Projection_1(RiModule* ri, std::string name) { ri->ri_Projection(name); }
+void ri_Projection_2(RiModule* ri, std::string name, PyObject* parms) { ri->ri_Geometry(name, parms); }
+void ri_Geometry_1(RiModule* ri, std::string name) { ri->ri_Projection(name); }
+void ri_Geometry_2(RiModule* ri, std::string name, PyObject* parms) { ri->ri_Geometry(name, parms); }
+
 namespace glman_for_python {
 	void export_Ri() {
 
@@ -76,7 +90,11 @@ namespace glman_for_python {
   			.def("WorldEnd", &RiModule::ri_WorldEnd)
   			.def("Display", &RiModule::ri_Display)
   			.def("Format", &RiModule::ri_Format)
-  			.def("Translate", &RiModule::ri_Translate);
+  			.def("Translate", &RiModule::ri_Translate)
+  			.def("Projection", &ri_Projection_1)
+  			.def("Projection", &ri_Projection_2)
+  			.def("Geometry", &ri_Geometry_1)
+  			.def("Geometry", &ri_Geometry_2);
 
   	}
 }

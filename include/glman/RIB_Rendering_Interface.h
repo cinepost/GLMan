@@ -1,6 +1,7 @@
 #ifndef __RIB_Rendering_Interface_h__
 #define __RIB_Rendering_Interface_h__
 
+#include "glman/Display.h"
 #include "glman/RIB_Interface.h"
 
 class RIB_Rendering_Interface: public RIB_Interface {
@@ -15,7 +16,7 @@ class RIB_Rendering_Interface: public RIB_Interface {
 
 		void ri_Translate(double x, double y, double z);
 	private:
-		//OP_Node *_node;
+		Display *display=NULL;
 };
 
 

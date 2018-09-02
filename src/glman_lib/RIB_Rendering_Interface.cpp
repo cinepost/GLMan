@@ -18,7 +18,7 @@ void RIB_Rendering_Interface::ri_WorldEnd() {
 
 
 void RIB_Rendering_Interface::ri_Display(std::string output, std::string display, std::string channels) {
-
+	this->display = new Display("houdini");
 }
 
 
