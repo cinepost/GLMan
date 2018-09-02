@@ -1,12 +1,8 @@
 file( GLOB SOURCES
 	./*.cpp
-#	./UT/*.cpp
-#	./Parameters/*.cpp
-#	./OP/*.cpp
-#	./GEO/*.cpp
 )
 
-set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_STATIC_LIBS OFF)
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
 
@@ -24,6 +20,7 @@ IF(APPLE)
 
    	set(CMAKE_CXX_COMPILER "clang++")
 	set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++ -lc++abi")
+	#set(CMAKE_SHARED_LINKER_FLAGS "-Wl -fPIC,--as-needed")
 ENDIF (APPLE)
 
 add_library( glman_lib SHARED ${SOURCES} )
