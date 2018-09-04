@@ -1,0 +1,36 @@
+
+
+HOUDINI
+------------------
+Choosing a renderer
+Each RIB target renderer has its own executable, way of compiling shaders, attributes, options, and features. Much of this is handled by Houdini behind the scenes. However, as a big head start, you can give Houdini a hint as to which render you are using by setting the environment variable HOUDINI_DEFAULT_RIB_RENDERER to the render target you want to use. The list of renderers can be inferred by looking at the $HH/RIBtargets and also at $HH/soho directory and scanning the files. The current renderers include prman20.0, air6.0, 3Delight9.0, and rdc3.4.
+
+Houdini uses this variable in several places. In the hrmanshader script (a wrapper around the shader compiler), the variable controls which compiler program to call. It also controls which properties appear on the RIB output driver.
+
+To...	Do this
+Set the default RIB renderer
+
+Set the HOUDINI_DEFAULT_RIB_RENDERER environment variable, for example:
+
+# set up for prman20.0
+export HOUDINI_DEFAULT_RIB_RENDERER=prman20.0
+
+------------------
+Setting up the display driver
+RenderMan version 20.2 and up ships with a Houdini display driver, so there is no need for any additional setup, beyond specifying houdini in the ROP node’s Display Device parameter. Once this is done, the RIB renderer will render directly to MPlay.
+
+It is also possible to reconfigure RenderMan to remap framebuffer device to Houdini display driver, so that all framebuffer rendering goes to MPlay as well. This can be done in rendermn.ini with this line:
+
+/displaytype/framebuffer houdini
+
+------------------
+Customizing the View: RenderMan menu
+The render menu in viewports has an entry View:RenderMan. This will render the scene without having to create an output driver. However, Houdini needs to know which application to invoke to render the scene. This is determined by setting the environment variable HOUDINI_VIEW_RMAN.
+
+To...	Do this
+Modify the "View: Renderman" menu command
+
+To change the renderer used when you choose View: RenderMan from the render icon in the viewer, set the environment variable HOUDINI_VIEW_RMAN. For example:
+
+# Set up for 3delight
+export HOUDINI_VIEW_RMAN=renderdl

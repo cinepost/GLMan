@@ -5,10 +5,9 @@
 #include <string>
 #include <iostream>
 
-#include "glman/RIB_Interface.h"
-#include "glman/Renderer.h"
+#include "glman_lib/renderer/renderer.h"
 
-#include "glman_for_python/RiModule.h"
+#include "glman_for_python/ri_module.h"
 
 namespace glman_for_python {
 

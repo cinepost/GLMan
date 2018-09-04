@@ -6,12 +6,12 @@ file( GLOB SOURCES
 find_package( PythonLibs 2.7 REQUIRED )
 include_directories( ${PYTHON_INCLUDE_DIRS} )
 
-set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_STATIC_LIBS OFF)
 set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
 
 # find boost libs
-find_package( Boost 1.67.0 COMPONENTS log python27 REQUIRED )
+find_package( Boost COMPONENTS log python27 REQUIRED )
 include_directories( ${Boost_INCLUDE_DIRS} )
 
 # define wrapper library
