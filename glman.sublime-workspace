@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Ri",
+				"Ri_Module"
+			],
+			[
+				"re",
+				"renderer"
+			],
+			[
 				"Sce",
 				"Scene_Reader"
 			],
@@ -32,20 +40,12 @@
 				"filename"
 			],
 			[
-				"re",
-				"rendertarget"
-			],
-			[
 				"ri",
 				"riDisplay"
 			],
 			[
 				"glam",
 				"glman_for_python"
-			],
-			[
-				"Ri",
-				"RiModule"
 			],
 			[
 				"a",
@@ -520,10 +520,293 @@
 	"buffers":
 	[
 		{
-			"file": "glman.sublime-project",
+			"file": "src/glman_lib/loaders/rib_loader.cpp",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 1503,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/glman_lib/scene.cpp",
+			"settings":
+			{
+				"buffer_size": 130,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/glman_for_python/glman_for_python.cpp",
+			"settings":
+			{
+				"buffer_size": 848,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 2008,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_lib/interfaces/rib_rendering_interface.h",
+			"settings":
+			{
+				"buffer_size": 681,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_lib/interfaces/rib_interface.h",
+			"settings":
+			{
+				"buffer_size": 587,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/display.cpp",
+			"settings":
+			{
+				"buffer_size": 707,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/renderer.cpp",
+			"settings":
+			{
+				"buffer_size": 1062,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/renderer.h",
+			"settings":
+			{
+				"buffer_size": 430,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_lib/parsers/rib_parser.h",
+			"settings":
+			{
+				"buffer_size": 5450,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "include/glman_lib/loaders/rib_loader.h",
+			"settings":
+			{
+				"buffer_size": 249,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "include/glman_lib/scene.h",
+			"settings":
+			{
+				"buffer_size": 397,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/glman_cmd/glman_cmd.cpp",
+			"settings":
+			{
+				"buffer_size": 3363,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_for_python/ri_module.h",
+			"settings":
+			{
+				"buffer_size": 1182,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/glman_lib/rib/attributes.h",
+			"settings":
+			{
+				"buffer_size": 246,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/rib/attributes.cpp",
+			"settings":
+			{
+				"buffer_size": 229,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include \"glman_lib/rib/attributes.h\""
+			}
+		},
+		{
+			"file": "src/glman_for_python/ri_module.cpp",
+			"settings":
+			{
+				"buffer_size": 3992,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/mesh.cpp",
+			"settings":
+			{
+				"buffer_size": 1515,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <string>"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/mesh.h",
+			"settings":
+			{
+				"buffer_size": 840,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#ifndef __MESH_H__"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/model.h",
+			"settings":
+			{
+				"buffer_size": 731,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#pragma once"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/model.cpp",
+			"settings":
+			{
+				"buffer_size": 2235,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#pragma once"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/shader.h",
+			"settings":
+			{
+				"buffer_size": 537,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#ifndef SHADER_H"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/material.cpp",
+			"settings":
+			{
+				"buffer_size": 1496,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <string>"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/material.h",
+			"settings":
+			{
+				"buffer_size": 782,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#ifndef MATERIAL_H"
+			}
+		},
+		{
+			"file": "include/glman_lib/renderer/texture.h",
+			"settings":
+			{
+				"buffer_size": 1318,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#ifndef __TEXTURE_H"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/texture.cpp",
+			"settings":
+			{
+				"buffer_size": 9589,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <string>"
+			}
+		},
+		{
+			"file": "CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 1151,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/renderer/shader.cpp",
+			"settings":
+			{
+				"buffer_size": 2559,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include <string>"
+			}
+		},
+		{
+			"file": "src/glman_lib/interfaces/rib_file_interface.cpp",
+			"settings":
+			{
+				"buffer_size": 1248,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/glman_lib/interfaces/rib_interface.cpp",
+			"settings":
+			{
+				"buffer_size": 86,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include <boost/log/trivial.hpp>\n\n#include \"glman_lib/renderer/renderer.h\"\n#include \"glman_lib/interfaces/rib_rendering_interface.h\"\n\nRIB_Rendering_Interface::RIB_Rendering_Interface(){\n\tattributes = new Attributes(); // root level attributes block\n\trenderer = new Renderer();\n\n\tBOOST_LOG_TRIVIAL(info) << \"RIB interface for image rendering initialized\";\n}\n\nRIB_Rendering_Interface::~RIB_Rendering_Interface(){\n\tif (attributes) delete attributes;\n\tif (renderer) delete renderer;\n\n\tBOOST_LOG_TRIVIAL(info) << \"RIB interface for image rendering destroyed\";\n}\n\nvoid RIB_Rendering_Interface::ri_WorldBegin() {\n\n}\n\n\nvoid RIB_Rendering_Interface::ri_WorldEnd() {\n\n}\n\n\nvoid RIB_Rendering_Interface::ri_Display(std::string output, std::string display, std::string channels) {\n\t//this->display = new Display(\"houdini\");\n}\n\n\nvoid RIB_Rendering_Interface::ri_Format(unsigned int width, unsigned int height, float aspect) {\n\t\n}\n\n\nvoid RIB_Rendering_Interface::ri_Translate(double x, double y, double z) {\n\n}\n\nvoid RIB_Rendering_Interface::ri_Translate(double x, double y, double z) {\n\n}",
+			"file": "src/glman_lib/interfaces/rib_rendering_interface.cpp",
+			"file_size": 996,
+			"file_write_time": 131805483813955227,
+			"settings":
+			{
+				"buffer_size": 1074,
 				"line_ending": "Unix"
 			}
 		}
@@ -564,21 +847,48 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/max/dev/glman",
+		"/Users/max/dev/glman/include",
+		"/Users/max/dev/glman/include/glman_for_python",
+		"/Users/max/dev/glman/include/glman_lib",
+		"/Users/max/dev/glman/include/glman_lib/interfaces",
+		"/Users/max/dev/glman/include/glman_lib/loaders",
+		"/Users/max/dev/glman/include/glman_lib/parsers",
+		"/Users/max/dev/glman/include/glman_lib/renderer",
+		"/Users/max/dev/glman/src",
+		"/Users/max/dev/glman/src/glman_cmd",
+		"/Users/max/dev/glman/src/glman_for_python",
+		"/Users/max/dev/glman/src/glman_lib",
+		"/Users/max/dev/glman/src/glman_lib/interfaces",
+		"/Users/max/dev/glman/src/glman_lib/loaders",
+		"/Users/max/dev/glman/src/glman_lib/renderer",
+		"/Users/max/dev/glman/src/glman_lib/rib",
+		"/Users/max/dev/glman/tests",
+		"/Users/max/dev/glman/tests/scenes"
 	],
 	"file_history":
 	[
+		"/Users/max/dev/glman/src/glman_lib/parsers/rib_parser.h",
+		"/Users/max/dev/glman/src/glman_lib/renderer.cpp",
+		"/Users/max/dev/glman/src/glman_lib/display.cpp",
+		"/Users/max/dev/glman/include/glman_lib/interfaces/rib_file_interface.h",
+		"/Users/max/dev/glman/include/glman_lib/interfaces/rib_rendering_interface.h",
+		"/Users/max/dev/glman/src/glman_for_python/RiModule.cpp",
+		"/Users/max/dev/glman/src/glman_for_python/glman_for_python.cpp",
 		"/Users/max/dev/glman/src/glman_lib/CMakeLists.txt",
+		"/Users/max/dev/glman/src/glman_lib/Renderer.cpp",
+		"/Users/max/dev/glman/src/glman_lib/Display.cpp",
+		"/Users/max/dev/glman/src/glman_lib/interfaces/ifd_interface.cpp",
+		"/Users/max/dev/glman/include/glman/loaders/rib_loader.h",
+		"/Users/max/dev/glman/src/glman_lib/RIB_Rendering_Interface.cpp",
 		"/Users/max/dev/glman/notes",
 		"/Users/max/dev/glman/src/glman_cmd/CMakeLists.txt",
 		"/Users/max/dev/glman/tests/scenes/pacman.rib",
 		"/Users/max/dev/glman/src/glman_for_python/CMakeLists.txt",
 		"/Users/max/dev/glman/CMakeLists.txt",
-		"/Users/max/dev/glman/src/glman_for_python/glman_for_python.cpp",
 		"/Users/max/dev/glman/src/glman_cmd/glman_cmd.cpp",
 		"/Users/max/dev/glman/include/glman/Display.h",
-		"/Users/max/dev/glman/src/glman_lib/Display.cpp",
 		"/Users/max/dev/glman/include/glman/RIB_Rendering_Interface.h",
-		"/Users/max/dev/glman/src/glman_lib/RIB_Rendering_Interface.cpp",
 		"/Users/max/dev/glman/src/glman_lib/IFD_Interface.cpp",
 		"/Users/max/dev/glman/include/glman/IFD_Interface.h",
 		"/Users/max/dev/glman/include/glman/RIB_File_Interface.h",
@@ -591,7 +901,6 @@
 		"/Users/max/dev/CopperFX/include/copper/HOM/HOM_Module.h",
 		"/Users/max/dev/CopperFX/src/copper_pymodule/HOM_Node.cpp",
 		"/Users/max/dev/CopperFX/include/copper/HOM/HOM_Node.h",
-		"/Users/max/dev/glman/src/glman_lib/Renderer.cpp",
 		"/Users/max/dev/glman/include/glman/Renderer.h",
 		"/Users/max/dev/glman/include/glman/ri.h",
 		"/Users/max/dev/glman/python/glman_for_python/prman.py",
@@ -686,19 +995,11 @@
 		"/Users/max/dev/Copperfield_FX/shout/parsers/ifd/parser_bgeo.py",
 		"/Users/max/dev/Copperfield_FX/copper/geometry/iotranslators/bgeo/bgeo.py",
 		"/Users/max/dev/Copperfield_FX/copper/geometry/iotranslators/obj/obj.py",
-		"/Users/max/dev/Copperfield_FX/shout/parsers/ifd/parser_ifd.py",
-		"/Users/max/dev/Copperfield_FX/shout/parsers/rib/parser_rib.py",
-		"/Users/max/dev/Copperfield_FX/shout/renderers/base.py",
-		"/Users/max/dev/Copperfield_FX/shout/renderers/ogl_renderer.py",
-		"/Users/max/dev/Copperfield_FX/shout/parsers/base.py",
-		"/Users/max/dev/Copperfield_FX/shout/shout.py",
-		"/Users/max/dev/Copperfield_FX/shout/gltest.py",
-		"/Users/max/dev/mgl/parser.py",
-		"/Users/max/dev/Copperfield_FX/shout/parsers/parser_ifd.py"
+		"/Users/max/dev/Copperfield_FX/shout/parsers/ifd/parser_ifd.py"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -712,6 +1013,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ribFilename",
+			"RiModule",
+			"ribFilename"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -719,6 +1023,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"sceneFilename",
+			"Ri_Module",
+			"filename"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -729,16 +1036,306 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 9,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "glman.sublime-project",
+					"file": "src/glman_lib/loaders/rib_loader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1073,
+								1073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/glman_lib/scene.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 30,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/glman_for_python/glman_for_python.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/glman_lib/CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "include/glman_lib/interfaces/rib_rendering_interface.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								617,
+								617
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "include/glman_lib/interfaces/rib_interface.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 587,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/glman_lib/renderer/display.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								78
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/glman_lib/renderer/renderer.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1004,
+								1004
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "include/glman_lib/renderer/renderer.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "include/glman_lib/parsers/rib_parser.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1053,
+								1053
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "include/glman_lib/loaders/rib_loader.h",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 249,
 						"regions":
 						{
 						},
@@ -751,13 +1348,604 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "include/glman_lib/scene.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/glman_cmd/glman_cmd.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2852,
+								2863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 854.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "include/glman_for_python/ri_module.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "include/glman_lib/rib/attributes.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/glman_lib/rib/attributes.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								50
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"glman_lib/rib/attributes.h\"",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/glman_for_python/ri_module.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								449,
+								542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/glman_lib/renderer/mesh.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1515,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <string>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "include/glman_lib/renderer/mesh.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								279,
+								279
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#ifndef __MESH_H__",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "include/glman_lib/renderer/model.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								405,
+								405
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#pragma once",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/glman_lib/renderer/model.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#pragma once",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "include/glman_lib/renderer/shader.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#ifndef SHADER_H",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "src/glman_lib/renderer/material.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <string>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "include/glman_lib/renderer/material.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								155
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#ifndef MATERIAL_H",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "include/glman_lib/renderer/texture.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#ifndef __TEXTURE_H",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "src/glman_lib/renderer/texture.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77,
+								77
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <string>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1037,
+								1037
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "src/glman_lib/renderer/shader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include <string>",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "src/glman_lib/interfaces/rib_file_interface.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "src/glman_lib/interfaces/rib_interface.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 86,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "src/glman_lib/interfaces/rib_rendering_interface.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1074,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1027,
+								1039
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -806,7 +1994,7 @@
 	"project": "glman.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -844,7 +2032,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

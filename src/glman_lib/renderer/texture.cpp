@@ -3,6 +3,9 @@
 #include <sstream>
 #include <iostream>
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb/stb_image.h"
+
 #include "glman_lib/renderer/texture.h"
 
 

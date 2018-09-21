@@ -9,31 +9,18 @@
 class Display {
 	public:
 		Display(std::string drivername);
-		/*
-		PtDspyError (* DspyImageOpen)(PtDspyImageHandle *pvImage,
-        const char *drivername,
-        const char *filename,
-        int width,
-        int height,
-        int paramCount,
-        const UserParameter *parameters,
-        int formatCount,
-        PtDspyDevFormat *format,
-        PtFlagStuff *flagstuff);
-        */
-        PtDspyError (* DspyImageOpen)(PtDspyImageHandle *,
-        const char *,
-        const char *,
-        int ,
-        int ,
-        int ,
-        const UserParameter *,
-        int ,
-        PtDspyDevFormat *,
-        PtFlagStuff *);
+		
 
 	private:
-
+                PtDspyOpenFuncPtr               m_OpenFunc;
+                PtDspyWriteFuncPtr              m_WriteFunc;
+                PtDspyDeepWriteFuncPtr          m_DeepWriteFunc;
+                PtDspyActiveRegionFuncPtr       m_ActiveRedionFunc;
+                PtDspyCloseFuncPtr              m_CloseFunc;
+                PtDspyFlushFuncPtr              m_FlushFunc;
+                PtDspyReopenFuncPtr             m_ReopenFunc;
+                PtDspyDelayCloseFuncPtr         m_DelayCloseFunc;
+                PtDspyQueryFuncPtr              m_QueryFunc;
 };
 
 

@@ -3,7 +3,7 @@ set (SOURCES
 )
 
 # find boost libs
-find_package( Boost COMPONENTS program_options REQUIRED )
+find_package( Boost COMPONENTS program_options log REQUIRED )
 include_directories( ${Boost_INCLUDE_DIRS} )
 
 add_executable (glman_cmd ${SOURCES} ${MOC_SRCS} ${RES_SOURCES})

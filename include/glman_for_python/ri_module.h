@@ -23,6 +23,11 @@ class Ri_Module {
 		void ri_Translate(double x, double y, double z);
 		void ri_Projection(std::string name, PyObject* parms=NULL);
 		void ri_Geometry(std::string name, PyObject* parms=NULL);
+		void ri_PointsPolygons(boost::python::list pointsPolyNvertices, boost::python::list pointsPolyVertices,
+                  boost::python::dict pointsPolyPointData);
+		void ri_ArchiveBegin(std::string name, PyObject* parms);
+		void ri_Sides(uint sides);
+		void ri_ReverseOrientation(void);
 
 	private:
 		std::vector<RIB_Interface *> ri_ifaces; // ri interfaces stack

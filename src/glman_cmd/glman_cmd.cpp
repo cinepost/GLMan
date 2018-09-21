@@ -1,9 +1,14 @@
+#include <boost/log/core.hpp>
+#include <boost/log/trivial.hpp>
+#include <boost/log/expressions.hpp>
 #include <boost/program_options.hpp>
 namespace po = boost::program_options;
 
 #include <iostream>
 #include <fstream>
 #include <iterator>
+
+namespace logging = boost::log;
 using namespace std;
 
 #include "glman_lib/loaders/rib_loader.h"
@@ -18,8 +23,11 @@ ostream& operator<<(ostream& os, const vector<T>& v)
     return os;
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
+  logging::core::get()->set_filter(
+    logging::trivial::severity >= logging::trivial::debug
+  );
+
   try { 
     int opt;
     string config_file;

@@ -19,9 +19,6 @@
     #include <GL/glext.h>
 #endif
 
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb/stb_image.h"
-
 
 class Texture
 {

@@ -19,8 +19,7 @@
 #include "glman_lib/renderer/mesh.h"
 
 
-class Model 
-{
+class Model {
     public:
         Model();
         ~Model();

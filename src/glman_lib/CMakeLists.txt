@@ -3,6 +3,7 @@ file( GLOB SOURCES
 	./interfaces/*.cpp
 	./loaders/*.cpp
 	./renderer/*.cpp
+	./rib/*.cpp
 )
 
 set(Boost_USE_STATIC_LIBS ON)

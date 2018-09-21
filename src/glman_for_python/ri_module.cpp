@@ -24,7 +24,7 @@ Ri_Module::~Ri_Module() {
 };
 
 void Ri_Module::ri_Begin(std::string rendertarget) {
-	if (rendertarget == "Ri:render") {
+	if ((rendertarget == "Ri:render") || (rendertarget == "__render")){
 		// image rendering interface
 		ri_ifaces.push_back (new RIB_Rendering_Interface());
 	} else {
@@ -77,6 +77,23 @@ void Ri_Module::ri_Geometry(std::string name, PyObject* parms){
 	//iface->ri_Translate(x, y, z);
 }
 
+void Ri_Module::ri_PointsPolygons(boost::python::list pointsPolyNvertices, boost::python::list pointsPolyVertices,
+                  boost::python::dict pointsPolyPointData) {
+
+}
+
+void Ri_Module::ri_ArchiveBegin(std::string name, PyObject* parms) {
+
+}
+
+void Ri_Module::ri_Sides(uint sides) {
+
+}
+
+void Ri_Module::ri_ReverseOrientation(void) {
+
+}
+
 //boost::shared_ptr<Ri_Module> Ri_Module::createNode(std::string type_name) {
 //	return boost::shared_ptr<Ri_Module>(new Ri_Module(_node->createNode(type_name)));
 //}
@@ -110,7 +127,11 @@ namespace glman_for_python {
   			.def("Projection", &ri_Projection_1)
   			.def("Projection", &ri_Projection_2)
   			.def("Geometry", &ri_Geometry_1)
-  			.def("Geometry", &ri_Geometry_2);
+  			.def("Geometry", &ri_Geometry_2)
+  			.def("PointsPolygons", &Ri_Module::ri_PointsPolygons)
+  			.def("ArchiveBegin", &Ri_Module::ri_ArchiveBegin)
+  			.def("Sides", &Ri_Module::ri_Sides)
+  			.def("ReverseOrientation", &Ri_Module::ri_ReverseOrientation);
 
   	}
 }

@@ -4,6 +4,7 @@
 //#include <string>
 
 //#include <boost/spirit.hpp>
+#include <boost/lambda/bind.hpp>
 #include <boost/spirit/include/classic.hpp>
 //#include <boost/spirit/phoenix.hpp>
 
@@ -11,6 +12,13 @@
 
 namespace rib
 {
+    // A plain function
+    void printDbl(double const& d)
+    {
+        std::cout << "dbl: " << d << std::endl;
+    }
+
+    using namespace boost::lambda;
     using namespace boost::spirit::classic;
     using namespace phoenix;
 
@@ -31,10 +39,11 @@ namespace rib
                 // General types
                 ribString       =   '"' >> +(alnum_p | '.') >> "\"";
 
-                ribInnerVector  =   real_p >> real_p >> real_p;
+                ribDouble = real_p[&printDbl];
+                ribInnerVector  =   ribDouble >> ribDouble >> ribDouble;
                 ribVector       =   ribInnerVector | ('[' >> ribInnerVector >> ']');
 
-                ribInnerColor   =   repeat_p(self.scn.getColorSize()) [ real_p ];
+                ribInnerColor   =   repeat_p(self.scn.getColorSize())[ real_p ];
                 ribColor        =   ribInnerColor | ( '[' >> ribInnerColor >> ']' );
 
                 ribArray        =   '[' >> (+real_p | +ribString) >> ']';
@@ -100,7 +109,7 @@ namespace rib
 
             // Lists of rules used
             rule<ScannerT>  root, request;
-            rule<ScannerT>  ribString, ribInnerVector, ribVector, ribInnerColor, ribColor, ribArray, ribParameter;
+            rule<ScannerT>  ribString, ribDouble, ribInnerVector, ribVector, ribInnerColor, ribColor, ribArray, ribParameter;
             rule<ScannerT>  graphicStateRules,
                                 topLevelGSRules, worldBegin, worldEnd;
             rule<ScannerT>  optionRules,
