@@ -7,7 +7,9 @@ set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME OFF)
 
 # find boost libs
-find_package( Boost COMPONENTS log python27 REQUIRED )
+find_package( Boost COMPONENTS log python REQUIRED )
+find_package( Boost COMPONENTS python27 )
+
 include_directories( ${Boost_INCLUDE_DIRS} ${PROJECT_DIR}/include/prman )
 
 # define wrapper library
